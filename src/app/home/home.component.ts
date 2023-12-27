@@ -8,6 +8,7 @@ import { HousingLocation } from "../housinglocation";
   standalone: true,
   imports: [CommonModule, HousingLocationComponent],
   template: `
+  <!-- <app-housing-location [housingLocation]="housingLocation"></app-housing-location> -->
     <section>
       <form>
         <input type="text" placeholder="Filter by city" />
@@ -16,7 +17,7 @@ import { HousingLocation } from "../housinglocation";
     </section>
 
     <section class="results">
-      <app-housing-location></app-housing-location>
+      <app-housing-location [housingLocation]="housingLocation"></app-housing-location>
     </section>
   `,
   styleUrls: ["./home.component.css"],
